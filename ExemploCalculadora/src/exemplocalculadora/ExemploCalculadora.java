@@ -21,25 +21,30 @@ public class ExemploCalculadora extends JFrame{
        setLayout(null);
        
        rotulo1 = new JLabel("1º Número :");
-       rotulo2 = new JLabel("2º Número :");
+        rotulo2 = new JLabel("2º Número :");
        
       text1 = new JTextField(5);
-      text2 = new JTextField(5);
+       text2 = new JTextField(5);
 
       Icone = new ImageIcon(" ");
-      Icone2 = new ImageIcon(" ");
-      Icone3 = new ImageIcon(" ");
-      Icone4 = new ImageIcon(" ");
+       Icone2 = new ImageIcon(" ");
+        Icone3 = new ImageIcon(" ");
+         Icone4 = new ImageIcon(" ");
        
       exibir = new JLabel("");
-      somar = new JButton("Somar" , Icone);
-subtrair = new JButton("Subtrair" , Icone);
-multiplicar = new JButton("Multiplicar" , Icone);
-dividir = new JButton("Dividir" , Icone);
+       somar = new JButton("Somar" , Icone);
+        subtrair = new JButton("Subtrair" , Icone);
+         multiplicar = new JButton("Multiplicar" , Icone);
+          dividir = new JButton("Dividir" , Icone);
       
       rotulo1.setBounds(50, 20, 100, 20); rotulo2.setBounds(50, 60, 100, 20);
        text1.setBounds(120, 20, 200, 20); text2.setBounds(120, 60, 200, 20);
-        exibir.setBounds(50, 120, 200, 20); somar.setBounds(150, 100, 80, 20); subtrair.setBounds(); multiplicar.setBounds(); dividir.setBounds();
+        exibir.setBounds(50, 120, 200, 20); 
+         somar.setBounds(150, 100, 80, 20); 
+          subtrair.setBounds(240, 100, 100, 20);
+           multiplicar.setBounds(150, 140, 100, 20);
+            dividir.setBounds(270, 140, 80, 20);
+          
         
         somar.addActionListener(
                 new ActionListener(){
@@ -50,8 +55,8 @@ dividir = new JButton("Dividir" , Icone);
                         numero2 =Integer.parseInt(text2.getText());
                         soma = numero1 + numero2;
 
-exibir.setVisible(true);
-                        exibir.setText("A Soma é : "+soma);
+        exibir.setVisible(true);
+        exibir.setText("A Soma é : "+soma);
                     }
                 }
         );
@@ -64,8 +69,8 @@ exibir.setVisible(true);
                         numero1 =Integer.parseInt(text1.getText());
                         numero2 =Integer.parseInt(text2.getText());
                         sub = numero1 - numero2;
-                        exibir.setVisible(true);
-                        exibir.setText("A Subtração é : "+sub);
+        exibir.setVisible(true);
+        exibir.setText("A Subtração é : "+sub);
                     }
                 }
         );
@@ -79,13 +84,13 @@ exibir.setVisible(true);
                         numero2 =Integer.parseInt(text2.getText());
                         mul = numero1 * numero2;
 
-exibir.setVisible(true);
-                        exibir.setText("A Multiplicaçâo é : "+mul);
+        exibir.setVisible(true);
+        exibir.setText("A Multiplicaçâo é : "+mul);
                     }
                 }
         );
 
-dividir.addActionListener(
+        dividir.addActionListener(
                 new ActionListener(){
                     public void actionPerformed(ActionEvent e){
                         int numero1,numero2,div;
@@ -94,22 +99,22 @@ dividir.addActionListener(
                         numero2 =Integer.parseInt(text2.getText());
                         div = numero1 / numero2;
 
-exibir.setVisible(true);
-                        exibir.setText("A Divisão é : "+div);
+         exibir.setVisible(true);
+         exibir.setText("A Divisão é : "+div);
                     }
                 }
         );
 
-        
         exibir.setVisible(false);
+        
         tela.add(rotulo1); tela.add(rotulo2);
         tela.add(text1); tela.add(text2);
         tela.add(exibir); tela.add(somar);
-tela.add(subtrair);
-tela.add(dividir);
-tela.add(multiplicar);
+        tela.add(subtrair);
+        tela.add(dividir);
+        tela.add(multiplicar);
         
-        setSize(400,250);
+        setSize(400, 250);
         setVisible(true); 
     }   
 }
