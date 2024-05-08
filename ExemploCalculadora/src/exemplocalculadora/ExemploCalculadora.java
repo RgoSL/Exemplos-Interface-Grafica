@@ -26,24 +26,24 @@ public class ExemploCalculadora extends JFrame{
       text1 = new JTextField(5);
        text2 = new JTextField(5);
 
-      Icone = new ImageIcon(" ");
-       Icone2 = new ImageIcon(" ");
-        Icone3 = new ImageIcon(" ");
-         Icone4 = new ImageIcon(" ");
+      Icone = new ImageIcon("mais.png ");
+       Icone2 = new ImageIcon("menos.png");
+        Icone3 = new ImageIcon("vezes.png ");
+         Icone4 = new ImageIcon("div.png");
        
       exibir = new JLabel("");
        somar = new JButton("Somar" , Icone);
-        subtrair = new JButton("Subtrair" , Icone);
-         multiplicar = new JButton("Multiplicar" , Icone);
-          dividir = new JButton("Dividir" , Icone);
+        subtrair = new JButton("Subtrair" , Icone2);
+         multiplicar = new JButton("Multiplicar" , Icone3);
+          dividir = new JButton("Dividir" , Icone4);
       
       rotulo1.setBounds(50, 20, 100, 20); rotulo2.setBounds(50, 60, 100, 20);
        text1.setBounds(120, 20, 200, 20); text2.setBounds(120, 60, 200, 20);
-        exibir.setBounds(50, 120, 200, 20); 
-         somar.setBounds(150, 100, 80, 20); 
-          subtrair.setBounds(240, 100, 100, 20);
-           multiplicar.setBounds(150, 140, 100, 20);
-            dividir.setBounds(270, 140, 80, 20);
+        exibir.setBounds(50, 170, 200, 20); 
+         somar.setBounds(90, 100, 100, 20); 
+          subtrair.setBounds(200, 100, 100, 20);
+           multiplicar.setBounds(90, 140, 120, 20);
+            dividir.setBounds(220, 140, 100, 20);
           
         
         somar.addActionListener(
