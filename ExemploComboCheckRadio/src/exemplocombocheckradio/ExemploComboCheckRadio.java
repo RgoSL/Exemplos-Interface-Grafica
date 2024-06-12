@@ -81,14 +81,26 @@ public class ExemploComboCheckRadio extends JFrame{
          // Coloca a Fonte Tamanho 12
          tam1.addActionListener(new ActionListener(){
              public void actionPerformed(ActionEvent e){
-                 
+                 tamFont = 12;
+                 text.setFont(new Font("", Style,tamFont));
+                 // Coloca a Fonte Tamanho 14
+                tam2.addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent e){
+                        tamFont = 14;
+                        text.setFont(new Font("", Style, tamFont));
+                    }
+                    
+                });
+                    
+                 }
              }
+                 );     
+             }
+    
          }
-             
-         }
+
          
-        
-        
+         
     
         
     
