@@ -42,10 +42,8 @@ public class ExemploJMenu02 extends JFrame {
                    opcoes.addSeparator();
                     opcoes.add(sair);
                     fonte.add(cor);
-                     opcoes.add(cor);
-                     
-                      opcoes.add(estilo);
-                       opcoes.add(tamanho);
+                                         fonte.add(estilo);
+                       fonte.add(tamanho);
                         cor.add(azul);
                          cor.add(verde);
                           cor.add(vermelho);
